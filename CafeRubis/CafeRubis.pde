@@ -54,13 +54,6 @@ void displayProducts()
   }
 }
 
-void mousePressed()
-{
- if (mousePressed < rectx2) 
- {
-   
- }
-}
 
 void draw()
 {
@@ -82,8 +75,102 @@ void draw()
 
 void mousePressed()
 {
- if (mousePressed ) 
- {
+  
+  int rectx1 = 60;
+  int rectx2 = 230;
+  int recty1 = 50;
+  int recty2 = 120;
+  
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > recty1 && mouseY < recty2) 
+   {
+     text("Americano        2.50", 370, 100);
+   }
    
- }
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 125 && mouseY < 195) 
+   {
+     text("Cappuccino        2.80", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 200 && mouseY < 270) 
+   {
+     text("Latte        2.80", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 275 && mouseY < 245) 
+   {
+     text("Roibois Tea        2.90", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 250 && mouseY < 360) 
+   {
+     text("Lemon & Ginger Tea        2.90", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 365 && mouseY < 450) 
+   {
+     text("Chardonnay        6.50", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 455 && mouseY < 530) 
+   {
+     text("Prosecco        7.20", 370, 100);
+   }
+}
+
+void mouseReleased()
+{
+  
+  int rectx1 = 60;
+  int rectx2 = 230;
+  int recty1 = 50;
+  int recty2 = 120;
+  
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > recty1 && mouseY < recty2) 
+   {
+     text("Americano        2.50", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 125 && mouseY < 195) 
+   {
+     text("Cappuccino        2.80", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 200 && mouseY < 270) 
+   {
+     text("Latte        2.80", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 275 && mouseY < 245) 
+   {
+     text("Roibois Tea        2.90", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 250 && mouseY < 360) 
+   {
+     text("Lemon & Ginger Tea        2.90", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 365 && mouseY < 450) 
+   {
+     text("Chardonnay        6.50", 370, 100);
+   }
+   
+   if (mouseX > rectx1 && mouseX < rectx2 && 
+      mouseY > 455 && mouseY < 530) 
+   {
+     text("Prosecco        7.20", 370, 100);
+   }
 }
