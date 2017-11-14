@@ -34,6 +34,7 @@ void printProducts()
   for (Product p : products)
   {
     text(p.name, x, y);
+    text(nf(p.price), x + 160, y);
     y = y + 65;
   }
 }
@@ -51,4 +52,38 @@ void displayProducts()
     rect(rectx1, recty1, rectx2, recty2);
     recty1 = recty1 + 65;
   }
+}
+
+void mousePressed()
+{
+ if (mousePressed < rectx2) 
+ {
+   
+ }
+}
+
+void draw()
+{
+  int x1 = 350;
+  int y1 = 50;
+  String names = "Your Bill";
+  String title = "Cafe Rubis Till System";
+  
+  textSize(16);
+  text(title, 220, 10, 200, 450);
+  
+  fill(255);
+  rect(x1, y1, 200, 450);
+  fill(0);
+  text(names, 420, 60, 200, 450);
+  line(300, 50, 300, 500);
+  
+}
+
+void mousePressed()
+{
+ if (mousePressed ) 
+ {
+   
+ }
 }
