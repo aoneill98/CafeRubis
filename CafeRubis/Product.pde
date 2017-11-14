@@ -1,4 +1,4 @@
-class Product()
+class Product
 {
    String name;
    float price;
@@ -6,6 +6,7 @@ class Product()
    Product(TableRow row)
   {
     name = row.getString("Name");
-    price = row.getString("Name");
+    price = row.getFloat("Price");
+  }
     
 }
