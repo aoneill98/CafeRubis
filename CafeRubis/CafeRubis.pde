@@ -7,6 +7,8 @@ void setup()
 {
   size(600, 600);
   loadData();
+  displayProducts();
+  printProducts();
 }
 
 ArrayList<Product> products = new ArrayList<Product>();
@@ -23,7 +25,30 @@ void loadData()
   }
 }
 
-void draw()
+void printProducts()
 {
+  int x = 70;
+  int y = 85;
   
+  fill(0);
+  for (Product p : products)
+  {
+    text(p.name, x, y);
+    y = y + 65;
+  }
+}
+
+void displayProducts()
+{
+  int rectx1 = 60;
+  int rectx2 = 200;
+  int recty1 = 50;
+  int recty2 = 58;
+  
+  for (Product p : products)
+  {
+    fill(255);
+    rect(rectx1, recty1, rectx2, recty2);
+    recty1 = recty1 + 65;
+  }
 }
